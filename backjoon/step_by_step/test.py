@@ -41,9 +41,31 @@
 # print(len(temp_str.split()))
 
 
-# 11718번
+# 1718번
 # while True:
 #     try:
 #         print(input())
 #     except EOFError:
 #         break
+
+
+# 2444번
+# num = int(input())
+# length = (2 * num) - 1
+# star_num = 1
+# blank_num = num - 1
+
+# for i in range(1, length+1):
+#     blank = ' ' * blank_num
+#     star = '*' * star_num
+#     print(blank + star)
+#     if i < num:
+#         star_num += 2
+#         blank_num -= 1
+#     else:
+#         star_num -= 2
+#         blank_num += 1
+
+
+# 10988번
+temp_str = input()
