@@ -67,5 +67,59 @@
 #         blank_num += 1
 
 
+# num = int(input())
+
+# for i in range(1, 2 * num):
+#     star_num = 2 * (num - abs(num - i)) - 1
+#     blank_num = abs(num - i)
+#     print(' ' * blank_num + '*' * star_num)
+
+
 # 10988번
-temp_str = input()
+# temp_str = input()
+
+# 2941번
+# croatia_list = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+# result = 0
+
+# 1157번
+# text = input().lower()
+
+# temp_dict = {}
+
+# max_text = ''
+# max_count = 0
+
+# for item in text:
+#     if item in temp_dict.keys():
+#         temp_dict[item] += 1
+#     else:
+#         temp_dict[item] = 1
+
+# for key, value in temp_dict.items():
+#     if value > max_count:
+#         max_text = key
+#         max_count = value
+#         is_duplicate = False
+#     elif value == max_count and max_count != 0:
+#         is_duplicate = True
+        
+# if is_duplicate:
+#     print('?')
+# else:
+    # print(max_text.upper())
+    
+
+# 1157번 수정본
+from collections import Counter
+
+text = input().upper()
+counter = Counter(text)
+
+max_count = max([value for value in counter.values()])
+max_char = [key for key, value in counter.items() if value == max_count]
+
+if len(max_char) > 1:
+    print('?')
+else:
+    print(max_char[0])
