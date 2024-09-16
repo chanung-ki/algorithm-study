@@ -111,15 +111,50 @@
     
 
 # 1157번 수정본
-from collections import Counter
+# from collections import Counter
 
-text = input().upper()
-counter = Counter(text)
+# text = input().upper()
+# counter = Counter(text)
 
-max_count = max([value for value in counter.values()])
-max_char = [key for key, value in counter.items() if value == max_count]
+# max_count = max([value for value in counter.values()])
+# max_char = [key for key, value in counter.items() if value == max_count]
 
-if len(max_char) > 1:
-    print('?')
-else:
-    print(max_char[0])
+# if len(max_char) > 1:
+#     print('?')
+# else:
+#     print(max_char[0])
+
+
+# 9093번
+# num = int(input())
+# text_list = [input() for i in range(num)]
+
+# for text in text_list:
+#     splited_text = text.split(' ')
+#     print(' '.join([''.join(list(reversed(item))) for item in splited_text]))
+
+
+# 쿼터 = 0.25
+# 다임 = 0.1
+# 니켈 = 0.05
+# 페니 = 0.01
+
+# 2720번
+num = int(input())
+money_list = [int(input()) for i in range(num)]
+
+for money in money_list:
+    quater = money // 25 
+    money %= 25  
+
+    dime = money // 10 
+    money %= 10  
+
+    nickel = money // 5  
+    money %= 5 
+
+    penny = money 
+
+    print(f'{quater} {dime} {nickel} {penny}')
+    
+    
