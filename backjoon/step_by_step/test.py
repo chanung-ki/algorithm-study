@@ -140,21 +140,55 @@
 # 페니 = 0.01
 
 # 2720번
-num = int(input())
-money_list = [int(input()) for i in range(num)]
+# num = int(input())
+# money_list = [int(input()) for i in range(num)]
 
-for money in money_list:
-    quater = money // 25 
-    money %= 25  
+# for money in money_list:
+#     quater = money // 25 
+#     money %= 25  
 
-    dime = money // 10 
-    money %= 10  
+#     dime = money // 10 
+#     money %= 10  
 
-    nickel = money // 5  
-    money %= 5 
+#     nickel = money // 5  
+#     money %= 5 
 
-    penny = money 
+#     penny = money 
 
-    print(f'{quater} {dime} {nickel} {penny}')
+#     print(f'{quater} {dime} {nickel} {penny}')
     
+
+# 25206번
+# 평균 학점 = (학점 x 이수학점)의 총 합 / 이수 학점
+# grade_info_dict = {
+#     'A+' : 4.5,
+#     'A0' : 4.0,
+#     'B+' : 3.5,
+#     'B0' : 3.0,
+#     'C+' : 2.5,
+#     'C0' : 2.0,
+#     'D+' : 1.5,
+#     'D0' : 1.0,
+#     'F' : 0.0,
+# }
+
+# total_grade = 0
+# total_credit = 0
+
+# for _ in range(20):
+#     subject, credit, grade = input().split(' ')
     
+#     if not grade == 'P':
+#         total_grade += float(credit) * grade_info_dict[grade]
+#         total_credit += float(credit)
+
+# print(total_grade/total_credit)   
+
+
+# 2355번
+a,b = map(int,input().split())
+
+if a>b:
+    a,b=b,a
+    
+print(b*(b+1)//2-a*(a-1)//2)
