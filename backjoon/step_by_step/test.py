@@ -158,8 +158,8 @@
 #     print(f'{quater} {dime} {nickel} {penny}')
     
 
-# 25206번
-# 평균 학점 = (학점 x 이수학점)의 총 합 / 이수 학점
+# # 25206번
+# # 평균 학점 = (학점 x 이수학점)의 총 합 / 이수 학점
 # grade_info_dict = {
 #     'A+' : 4.5,
 #     'A0' : 4.0,
@@ -185,10 +185,22 @@
 # print(total_grade/total_credit)   
 
 
-# 2355번
-a,b = map(int,input().split())
+# # 2355번
+# a,b = map(int,input().split())
 
-if a>b:
-    a,b=b,a
+# if a>b:
+#     a,b=b,a
     
-print(b*(b+1)//2-a*(a-1)//2)
+# print(b*(b+1)//2-a*(a-1)//2)
+
+
+# # 10430버ㄴ
+# a, b, c = input().split()
+# a = int(a)
+# b = int(b)
+# c = int(c)
+
+# print((a+b)%c)
+# print(((a%c)+(b%c))%c)
+# print((a*b)%c)
+# print(((a%c)*(b%c))%c)
